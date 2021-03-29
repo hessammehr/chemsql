@@ -1,0 +1,61 @@
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="filter"
+      type="filter"
+    />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      id="palladium catalyst"
+    />
+    <Reagent
+      id="Ugi product"
+    />
+    <Reagent
+      id="dimethylacetamide"
+      use_for_cleaning="true"
+    />
+    <Reagent
+      id="N-methyldicyclohexylamine"
+    />
+    <Reagent
+      id="methanol"
+      use_for_cleaning="true"
+    />
+  </Reagents>
+
+  <Procedure>
+    <AddSolid
+      vessel="filter"
+      reagent="palladium catalyst"
+      mass="80 mg"
+    />
+    <AddSolid
+      vessel="filter"
+      reagent="Ugi product"
+      mass="1 g"
+    />
+    <Add
+      vessel="filter"
+      reagent="dimethylacetamide"
+      volume="20 mL"
+      stir="true"
+    />
+    <Add
+      vessel="filter"
+      reagent="N-methyldicyclohexylamine"
+      volume="1.68 mL"
+      stir="true"
+    />
+    <HeatChill
+      vessel="filter"
+      temp="100°C"
+      time="16 h"
+      stir="true"
+    />
+  </Procedure>
+
+</Synthesis>
